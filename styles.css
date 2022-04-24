@@ -134,14 +134,19 @@ table {
   font-weight: 600;
 }
 #map-initializer-form {
-  margin-left: 2vh;
-  height: 4vh;
+  margin: 2vh;
+  height: 8vh;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #map-initializer-form input {
-  height: 3vh;
+  height: 5vh;
+  margin: 1vh;
 }
 select {
-  height: 3vh;
+  height: 5vh;
 }
 #game-panel {
   height: 100%;
@@ -151,9 +156,10 @@ select {
   padding: 5px 10px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 3vh;
+  height: 5vh;
 }
 #restart-button {
   margin-right: 1vh;
@@ -163,9 +169,9 @@ select {
   background-color: #ed3460;
   font-size: 20px;
   font-weight: 800;
-  color: white
+  color: white;
 }
-#restart-button:hover{
+#restart-button:hover {
   cursor: pointer;
 }
 #time-elapsed {
@@ -174,7 +180,6 @@ select {
 }
 #map {
   margin: auto;
-  padding: auto;
 }
 #map .row {
   margin: auto;
@@ -212,33 +217,20 @@ select {
   font-size: 30px;
 }
 
-.stone:hover{
+.stone:hover {
   cursor: pointer;
 }
 
-/* .black {
-  background-color: black;
-}
-
-.white {
-  background-color: white;
-} */
 
 #result-panel {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 40vh;
-  height: 20vh;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 700;
   border: 10px solid #eff5b5;
   background-color: #eff5b5;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  line-height: 1.5;
+}
+
+.none {
+  display: none !important;
 }

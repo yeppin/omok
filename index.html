@@ -7,8 +7,8 @@
 <body>
     <h1 id="omock-title">Omok v0.01</h1>
     <form id="map-initializer-form">
-        <input placeholder="가로" name="width" type="number"/>
-        <input placeholder="세로" name="height" type="number"/>
+        <input placeholder="10 이상 19 이하의 가로" name="width" type="number"/>
+        <input placeholder="10 이상 19 이하의 세로" name="height" type="number"/>
         <select name="stone">
             <option value="black">흑돌</option>
             <option value="white">백돌</option>
@@ -17,7 +17,7 @@
     </form>
 
     <div id="game-panel">
-        <div id="score-board">
+        <div id="score-board" class="none">
             <button id="restart-button">Restart</button>
             <div id="time-elapsed">00:00:00</div>
         </div>
